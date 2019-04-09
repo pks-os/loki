@@ -1,10 +1,14 @@
 .uptodate
+.uptodate-debug
 .pkg
 .cache
 *.output
 mixin/vendor/
 cmd/loki/loki
 cmd/promtail/promtail
+cmd/loki/loki-debug
+cmd/promtail/promtail-debug
 /loki
 /promtail
 /logcli
+dlv
