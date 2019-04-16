@@ -130,5 +130,7 @@ func (t *tailer) stop() error {
 }
 
 func (t *tailer) cleanup() {
+	readBytes.DeleteLabelValues(t.path)
+	totalBytes.DeleteLabelValues(t.path)
 	t.positions.Remove(t.path)
 }
